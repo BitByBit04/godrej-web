@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Furniture Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="loader">
+        <h1><span>The</span> <span>Furniture</span> <span> Site </span> <span>🛌🏽</span></h1>
+        <div class="bg-loader"></div>
+    </div>
+    <section id="main">
+        <section class="home" id="home">
+            <div style="background-color: #f0f0f0;" class="navbar">
+                <nav style=" color: black;">
+                    <div class="logo">
+                        <a href="#">
+                            <li>
+                                <img src="assets/logonav1.png" alt="">
+                            </li>
+                        </a>
+                    </div>
+                    <span class="nav-partition"></span>
+                    <ul class="links">
+                        <svg id="nav-close" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.5304 5.53033C19.8232 5.23744 19.8232 4.76256 19.5304 4.46967C19.2375 4.17678 18.7626 4.17678 18.4697 4.46967L12 10.9394L5.53033 4.46967C5.23744 4.17678 4.76256 4.17678 4.46967 4.46967C4.17678 4.76257 4.17678 5.23744 4.46967 5.53033L10.9394 12L4.4697 18.4697C4.1768 18.7626 4.1768 19.2374 4.4697 19.5303C4.76259 19.8232 5.23746 19.8232 5.53036 19.5303L12 13.0607L18.4697 19.5303C18.7626 19.8232 19.2374 19.8232 19.5303 19.5303C19.8232 19.2374 19.8232 18.7626 19.5303 18.4697L13.0607 12L19.5304 5.53033Z"
+                                fill="white" />
+                        </svg>
+                        <a href="">
+                            <li style="font-size: 20px;">Home</li>
+                        </a>
+                        <a href="">
+                            <li style="font-size: 20px;" id="dropdown-navigation">Shop <svg id="dropdown-btn" width="15"
+                                    height="15" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.72949 10.0052L12.9523 16.228L19.1751 10.0052" stroke="#2A2A2A"
+                                        stroke-width="2" />
+                                </svg>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li style="font-size: 20px;">About</li>
+                        </a>
+                        <form class="search-form" style="display: flex;">
+                            <input type="text" placeholder="Search..." name="search"
+                                style="padding: 10px; margin-left: 100px; border: none; border-radius: 3px;">
+                            <button type="submit"
+                                style="padding: 5px 10px; border: none; background-color: #555; color: #ffffff; cursor: pointer; border-radius: 3px;">Search</button>
+                        </form>
+                        <a href="" style="margin-left: auto;">
+                            <li><svg id="nav-bag" width="27" height="20" viewBox="0 0 27 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.3784 12.9016V7.72135M7.8317 12.9016V7.72135M7.8317 7.72135V6.28961C7.8317 3.36824 10.1927 1 13.1051 1C16.0175 1 18.3784 3.36824 18.3784 6.28961V7.72135M7.8317 7.72135C8.86886 7.61201 10.1905 7.61201 12.0345 7.61201H14.1757C16.0196 7.61201 17.3413 7.61201 18.3784 7.72135M7.8317 7.72135C7.03799 7.80503 6.4109 7.95274 5.84385 8.21349C4.69123 8.7435 3.71547 9.59572 3.03354 10.668C2.25968 11.8848 2.03578 13.5018 1.58799 16.7359C1.01296 20.8888 0.725449 22.9653 1.35763 24.578C1.91262 25.9938 2.93736 27.1743 4.25904 27.9205C5.76456 28.7705 7.85452 28.7705 12.0345 28.7705H14.1757C18.3556 28.7705 20.4456 28.7705 21.9511 27.9205C23.2728 27.1743 24.2975 25.9938 24.8525 24.578C25.4847 22.9653 25.1972 20.8888 24.6222 16.7359C24.1744 13.5018 23.9505 11.8848 23.1766 10.668C22.4947 9.59572 21.5189 8.7435 20.3663 8.21349C19.7992 7.95274 19.1722 7.80503 18.3784 7.72135"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                    aria-labelledby="title" width="27" height="20">
+                                    <title>My Cart</title>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path stroke="#000" stroke-width="1.2"
+                                            d="M23 5.052l-2.456 8.41H10.406L7.95 5.052 1 5"></path>
+                                        <path fill="#000"
+                                            d="M10.308 18.346c0 .85.65 1.5 1.5 1.5s1.5-.65 1.5-1.5-.65-1.5-1.5-1.5-1.5.65-1.5 1.5M18.177 18.346c0 .85.65 1.5 1.5 1.5s1.5-.65 1.5-1.5-.65-1.5-1.5-1.5-1.5.65-1.5 1.5">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="20" viewBox="0 0 17 24">
+                                    <titlle>User Logo</titlle>
+                                    <g fill="#000" fill-rule="evenodd">
+                                        <path fill-rule="nonzero"
+                                            d="M8 8.853a4.439 4.439 0 0 1-4.427-4.426A4.439 4.439 0 0 1 8 0a4.439 4.439 0 0 1 4.427 4.427A4.439 4.439 0 0 1 8 8.853zm0-7.609a3.179 3.179 0 0 0-3.182 3.183A3.179 3.179 0 0 0 8 7.609a3.179 3.179 0 0 0 3.182-3.182A3.179 3.179 0 0 0 8 1.244z">
+                                        </path>
+                                        <path
+                                            d="M15.929 17h-1.245c0-3.076-2.986-5.582-6.666-5.582S1.333 13.924 1.333 17H.09c0-3.769 3.555-6.827 7.929-6.827 4.373 0 7.91 3.058 7.91 6.827z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <div class="menu-content">
+                        <ul class="menu-row">
+                            <li id="menu-heading">Best Seller🔥</li>
+                            <li>Bookcases</li>
+                            <li>Nightstand</li>
+                            <li>Wardrobe</li>
+                        </ul>
+                        <ul class="menu-row">
+                            <li id="menu-heading">Wooden Ladder</li>
+                            <li>Six Layer Wood Bookshelf</li>
+                            <li>Sleeping Bench Ottoman Sofa</li>
+                            <li>Wooden Fold-able Side Table</li>
+                            <li>Wooden 3 Seater Sofa </li>
+                            <li>Tv and Set Top Box Stand</li>
+                            <li>Coffee Table pluse Chair </li>
+                        </ul>
+                        <ul class="menu-row">
+                            <li id="menu-heading">Offer For Today🛋️</li>
+                            <li>55% On Wooden Sofa Set</li>
+                            <li id="menu-heading">Pillow Cover🪑</li>
+                            <li>Cotton pillow Cover</li>
+                            <li id="menu-heading">New Arrival⚡</li>
+                            <li>Fabric Sofa Pluse Bed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- home-content -->
+            <div class="home-content">
+                <div class="left-home">
+
+                    <h1><span style="color: #e27012;">"Godrej Interio"</span> <span class="home-img-text"></span> <br>
+                        <span>
+                            Where
+                        </span> <span>Innovation </span> <span>Meets </span> <span>Excellence</span>
+                        <span style="color: #F15A29;">
+                    </h1>
+                    <button class="btn"> Order Now</button>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <br>
+        <div>
+            <div class="small">
+                <div  style="margin-left: 20%;"  class="scrolling-images">
+                    <img style="height: 70px;" src="./assets/a home.avif" alt="">
+                    <img style="height: 70px;" src="./assets/b home.avif" alt="">
+                    <img style="height: 70px;" src="./assets/c home.avif" alt="">
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <section>
+                <h1 class="abc"
+                    style="font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    About Us</h1>
+                <br>
+                <div class="container">
+                    <img style="height: 50%; width: 50%;" src="./assets/about1.jpg" alt="About Us Image">
+                    <div>
+                        <h1 style="font-size: 28px; text-align: center; color: #f05533;">"Why Choose Godrej for
+                            Furniture Online?"</h1>
+                        <br><br>
+                        <p style="font-size: 19px;">
+                            At Godrej, we understand the importance of choosing the right furniture for your home. Our
+                            commitment to quality and customer satisfaction sets us apart. Here's why you should choose
+                            Godrej Interio for your furniture online needs:
+                            <br>
+                            Unmatched Quality: Our furniture is crafted from premium materials, ensuring long-lasting
+                            durability and timeless appeal. Each piece undergoes rigorous quality checks to meet the
+                            highest standards.
+                            <br>
+                            Innovative Designs: We offer a wide range of innovative designs that cater to various tastes
+                            and preferences, making it easy to find furniture that complements your style. From
+                            contemporary to classic, our designs are both functional and aesthetically pleasing.
+                            <br>
+                            Convenient Shopping Experience: Our user-friendly website allows you to browse and purchase
+                            furniture online with ease, from the comfort of your home. With detailed product
+                            descriptions, high-resolution images, and customer reviews, making an informed decision has
+                            never been easier.
+                            <br>
+                            Trusted Brand: With decades of expertise, Godrej is a name you can trust for all your
+                            furniture needs. Our reputation for excellence is built on a foundation of quality,
+                            innovation, and customer satisfaction.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <br><br>
+            <section class="body">
+                <div class="carousel">
+                    <br>
+                    <h1 style="font-size: 30px; margin-left: 10px;">Our Top Furniture Categories>></h1>
+                    <br>
+                    <div class="carousel-track">
+                        <img src="./assets/high-1.jpg" alt="Image 1">
+                        <img src="./assets/high-2.jpg" alt="Image 2">
+                        <img src="./assets/high-3.jpg" alt="Image 3">
+                        <img src="./assets/high-4.jpg" alt="Image 4">
+                        <img src="./assets/high-5.jpg" alt="Image 5">
+                        <img src="./assets/high-6.jpg" alt="Image 6">
+                        <img src="./assets/high-7.jpg" alt="Image 7">
+                        <img src="./assets/high-8.jpg" alt="Image 8">
+                        <img src="./assets/high-9.jpg" alt="Image 9">
+                        <img src="./assets/high-10.jpg" alt="Image 10">
+
+                        <img src="./assets/high-1.jpg" alt="Image 1">
+                        <img src="./assets/high-2.jpg" alt="Image 2">
+                        <img src="./assets/high-3.jpg" alt="Image 3">
+                        <img src="./assets/high-4.jpg" alt="Image 4">
+                        <img src="./assets/high-5.jpg" alt="Image 5">
+                        <img src="./assets/high-6.jpg" alt="Image 6">
+                        <img src="./assets/high-7.jpg" alt="Image 7">
+                        <img src="./assets/high-8.jpg" alt="Image 8">
+                        <img src="./assets/high-9.jpg" alt="Image 9">
+                        <img src="./assets/high-10.jpg" alt="Image 10">
+
+                        <img src="./assets/high-1.jpg" alt="Image 1">
+                        <img src="./assets/high-2.jpg" alt="Image 2">
+                        <img src="./assets/high-3.jpg" alt="Image 3">
+                        <img src="./assets/high-4.jpg" alt="Image 4">
+                        <img src="./assets/high-5.jpg" alt="Image 5">
+                        <img src="./assets/high-6.jpg" alt="Image 6">
+                        <img src="./assets/high-7.jpg" alt="Image 7">
+                        <img src="./assets/high-8.jpg" alt="Image 8">
+                        <img src="./assets/high-9.jpg" alt="Image 9">
+                        <img src="./assets/high-10.jpg" alt="Image 10">
+                    </div>
+                </div>
+            </section>
+            <section class="sec-2">
+                <div id="heading">
+                    <h1>Trending Items</h1>
+                </div>
+
+                <div class="highlight-container one-container">
+                    <div class="highlight one-high">
+                        <div class="image-highlights"><img src="assets/Home Decor.jpg" alt=""></div>
+                        <div class="highlight-content">
+                            <br><br>
+                            <h1>Home -Decor</h1>
+                            <p>Home Decor is the most important segment in setting the complete ambiance of your home.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="highlight two-high" style="background-color: #e2e0e0;">
+                        <div class="image-highlights"><img src="assets/furnishing (1) (1).jpg" alt=""></div>
+                        <div class="highlight-content" style="color: #35495E;">
+                            <h1> Furnishings</h1>
+                            <p>Furnishings have always been an essential element, from getting a cozy floor to lying
+                                over a
+                                soft bed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-container two-container">
+                    <div class="highlight three-high" style="background-color: rgb(49, 47, 47);">
+                        <div class="image-highlights"><img src="assets/lamp and light (1).jpg" alt=""></div>
+                        <div class="highlight-content" style="color: rgb(255, 255, 255);">
+                            <h1>Lamp and Lighting</h1>
+                            <p>Lamp Light is one of the significant parts of the decor of the modern day’s interiors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="highlight four-high" style="background-color: #FFF6DD;">
+                        <div class="image-highlights"><img src="assets/home ware.jpg" alt=""></div>
+                        <div class="highlight-content" style="color: #D6751F;">
+                            <h1>Homeware</h1>
+                            <p>Homeware items are also winningly benefiting the house, apart from home furniture and
+                                furnishing that enhance the house interiors.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </section>
+            <br>
+            <br>
+            <br>
+
+            <h1
+                style="text-align: center; font-size: 50px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                Our Product</h1><br>
+            <section>
+                <div class="card-container">
+                    <!-- Repeat this block for each of the 9 cards -->
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product1.jpg" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u> Wood Sofa Set </u>
+                                    <br>
+                                    <p style="text-align: start;"> Rs 99,989 <br>Sofa set is the most raided part of the
+                                        Living room. It can add an everlasting appeal to your home decor. And
+                                        WoodenStreet confers the luxurious and designer collection of the best fabric &
+                                        wooden sofa sets online in India at the lowest price and Unmatched offers. While
+                                        sofa set online shopping, it's important to consider the sofa size that best
+                                        fits your living space. You can find a royal sofa set according to seat capacity
+                                        that fits well.
+                                    </p>
+                                </h1>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product2.jpg" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u> Chairs </u>
+                                    <br>
+                                    <p style="text-align: start;">Rs 19,989 <br>
+
+                                        Chair is your comfortable place that adds a style statement to the home while
+                                        providing cozy relaxation. From cozy corners to bustling dining rooms, our
+                                        stylish chairs invite you to experience the warmth of home in every moment.
+                                        Whether you need a chair for sitting after a long day or just gather around with
+                                        friends and family, our collection has something for everyone.. Carefully
+                                        crafted with attention to detail.
+                                    </p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product3.jpg" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u> 6 Seater Dining Table Sets </u>
+                                    <br>
+                                    <p style="text-align: start;">Rs 32,989 <br>
+                                        A 6 Seater Dining Table Set is the most versatile addition to any home.
+                                        Available in a range of materials from wood, and glass to marble, these table of
+                                        6 seater sets add a distinct appeal to the space. Be it a family gathering or a
+                                        regular meal, these modern dining table sets 6 seater can easily accommodate all
+                                        of your family members. There are myriads of designs to choose from i.e. round,
+                                        rectangular.
+                                    </p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product4.webp" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u>Lamps & Lightings</u>
+                                    <br>
+                                    <p style="text-align: start;">Rs 1,883 <br>
+                                        Floor lamps are popular lighting fixtures in modern Indian homes. These lamps
+                                        not only make the rooms bright but also make the inside of the house look nice.
+                                        A wide variety of standing lamps with advanced features are readily available in
+                                        the Indian market. They are taller than table lamps and provide ample lighting
+                                        to create a well-lit ambiance in any room, making the room look well-lit and
+                                        stylish.
+
+
+                                    </p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product5.webp" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u>Dressing Table</u>
+                                    <br>
+                                    <p style="text-align: start;">Rs 2,799<br>
+                                        A dressing table is more than a mere piece of furniture; it's a sanctuary of
+                                        self-care and a dedicated space for grooming. At Wooden Street, you will find a
+                                        variety of stylish and new dressing table designs that will add elegance to your
+                                        bedroom decor. Our wide collection of wooden dressing table offers a variety of
+                                        features, like storage drawers, shelves, locks, and hidden cabinets. Constructed
+                                        from high-quality woods such as Teak, Oak and Sheesham.
+                                    </p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product6.webp" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u>Tv Units</u>
+                                    <br>
+                                    <p style="text-align: start;">Rs 1,499<br>
+                                        TV units are the furniture pieces that have been part of most of our
+                                        get-togethers and memories. Often placed below our television screen, a TV Unit
+                                        is an unspoken hero that doesn’t get much spotlight but is surely one essential
+                                        element. TV unit designs are made in such a way that they not only offer wide
+                                        storage to prevent your living room from being cluttered but also complement the
+                                        rest of your home decor in a way that it all comes together seamlessly.
+                                    </p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product7.webp" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u>Wardrobes</u>
+                                    <br>
+                                    <p style="text-align: start;">Rs 9,989<br>
+                                        Wardrobe is the storage wizard that keeps all your clothing essentials and other
+                                        items intact in its chest. With our extensive wooden wardrobe collection, browse
+                                        various designs, sizes, and finishes to find the perfect fit for your storage
+                                        needs. You can choose from single-door to 4 door wooden wardrobe furniture that
+                                        too in hinged door, sliding doors, or mirrored wardrobe designs all in
+                                        accordance with the purpose and size of your room.
+                                    </p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product8.jpg" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u>Home Decors</u>
+                                    <br>
+                                    <p style="text-align: start;">Rs 199<br>
+                                        Home Decor is the most important segment in setting the complete ambiance of
+                                        your home. Home decor items include a range of decoration accessories for your
+                                        abode, like wall decor, mirror frames, paintings, figurines, and many more.
+                                        Uplift the aura of your home with the best home decor online shopping in India
+                                        and adding to the aesthetic appeal of your homely space by buying home decor
+                                        items online.
+                                    </p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="./assets/product9.jpg" alt="Description 1">
+                            </div>
+                            <div class="card-back">
+                                <h1><u>Serving Trays</u>
+                                    <br>
+                                    <p style="text-align: start;">Rs 399<br>
+                                        Serving tray can do a lot of wonders, Be it any party, gathering, or formal
+                                        dinner, presenting food properly is everyone’s priority. So, Considering all the
+                                        needs, Wooden Street brings the widest range of wooden homewares including
+                                        wooden serving trays online. These units can add functionality and stunning
+                                        looks to your home interiors. So, scroll right down to get the best deals of
+                                        serving tray in just a few clicks.
+                                    </p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="./assets/godrej bg.avif" alt="" class="bounce">
+            </div>
+
+
+            <section class="sec-6">
+                <div id="heading">
+                    <h1 align="center">Our <span style="color: #F15A29;"> Service </span></h1>
+                </div>
+                <img style="width: 100%;" src="./assets/servicehead.avif" alt="">
+                <br>
+                <br>
+                <p style="font-size: 25px; margin-left: 43px;">Home > Service - Services Offered</p>
+                <br>
+                <div>
+                    <nav class="main-nav">
+                        <a href="#services">Services Offered</a>
+                        <a href="#care">Care Booklet</a>
+                        <a href="#request">Request A Service</a>
+                        <a href="#track">Track Your Service</a>
+                        <a href="#contact">Contact Us</a>
+                        <a href="#faqs">FAQs</a>
+                    </nav>
+                </div>
+
+                <br>
+                <br>
+                <div class="collection">
+                    <div class="item">
+                        <img src="./assets/item1.avif" alt="Item 1">
+                        <div class="description">
+                            <h2>Repainting</h2>
+                            <p>Existing cupboards and metal products are repainted with premium quality paint to give
+                                them a completely fresh look, improving the furniture’s durability in the process.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/item2.avif" alt="Item 2">
+                        <div class="description">
+                            <h2>Reupholstery</h2>
+                            <p>The fabric/upholstery of existing sofas, chairs, etc. are changed to not only make your
+                                furniture look trendy but also improve its life.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/item3.avif" alt="Item 3">
+                        <div class="description">
+                            <h2>Cleaning</h2>
+                            <p>Sofas, chairs and carpet are shampooed with approved cleaning agents to get rid of
+                                stains, maintain its overall hygiene and to make it look as good as new.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/item4.avif" alt="Item 4">
+                        <div class="description">
+                            <h2>Furniture AMC/CMC</h2>
+                            <p>Our annual maintenance contract are ideal for regular upkeep of your furniture to
+                                maintain its overall appearance and quality.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/item5.avif" alt="Item 5">
+                        <div class="description">
+                            <h2>Refurbishing</h2>
+                            <p>Every workstation’s fabric and tiles’ shades are replaced to rejuvenate its appearance
+                                and boost furniture’s life at a considerably low cost.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/item6.avif" alt="Item 6">
+                        <div class="description">
+                            <h2>Layout Modification</h2>
+                            <p>The layout of the entire office floor is changed or modified with an aim to give your
+                                office a radical new look and ensure space optimisation. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="hub">
+                <div style="margin-left: 35px;" class="college">
+                    <a href="">
+                        <img src="./assets/godrej hub.avif" alt="Image 1">
+                        <img src="./assets/godrej hub 1.avif" alt="Image 2">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <section class="rot">
+                <div id="heading">
+                    <h1>Blogs</h1>
+                </div>
+                <h3 style="margin-left: 40px; margin-right: 40px;">Inspire, The Godrej Interio Blog welcomes you
+                    to the world of furniture and living spaces. Life and lifestyle influence physical space:
+                    how we use it; and emotional space: how we feel in it. Inspire aims to enhance your
+                    experience of life by guiding you on how to create Better Spaces, promote Better Living, and
+                    enjoy Living Together with loved ones. Be inspired!</h3>
+                <br>
+                <div class="root">
+                    <div class="furniture-item">
+                        <img src="./assets/blogs1.avif" alt="Furniture Image 1">
+                        <div class="furniture-description">
+                            <h3>Guide To Modular Kitchen Accessories</h3>
+                            <p>Discover a curated selection of stylish and functional kitchen accessories for
+                                modular kitchens. The ultimate Guide to Modular Kitchen Accessories that will
+                                elevate your culinary</p>
+                        </div>
+                    </div>
+
+                    <div class="furniture-item">
+                        <img src="./assets/blogs2.avif" alt="Furniture Image 2">
+                        <div class="furniture-description">
+                            <h3>Choosing The Right Bean Bag Filling: Foam Vs.Traditional</h3>
+                            <p>Dive into the debate of Foam vs. Traditional options to find out which one suits
+                                your style and comfort preferences. Explore the pros and cons of each filling
+                                type to make an informed decision.</p>
+                        </div>
+                    </div>
+
+                    <div class="furniture-item">
+                        <img src="./assets/blogs3.avif" alt="Furniture Image 3">
+                        <div class="furniture-description">
+                            <h3>Straight Modular Kitchen Design Ideas</h3>
+                            <p>Embrace efficiency and elegance with our curated selection of small straight
+                                kitchen designs. Explore space-saving solutions without compromising on style or
+                                functionality.</p>
+                        </div>
+                    </div>
+
+                    <div class="furniture-item">
+                        <img src="./assets/blogs4.avif" alt="Furniture Image 4">
+                        <div class="furniture-description">
+                            <h3>7 Summer Interior Décor Tips</h3>
+                            <p>Get inspired with our curated list of 7 summer interior decor ideas! From vibrant
+                                painting ideas to cozy living room decorations, find everything you need to
+                                spruce up your home this season.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="zoom-container">
+                <img style="width: 85%; margin-left: 8%;" src="./assets/BlogTitleDesktop.avif" alt="Zooming Image">
+            </div>
+             <!-- as seen// -->
+              <!-- as seen as start -->
+              <section class="sec-7">
+                <div id="heading">
+                    <h1>As Seen On</h1>
+                </div>
+                <div style="margin-left: 5%;" class="row-1">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m1.png" alt="">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m2.png" alt="">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m3.png" alt="">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m4.png" alt="">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m5.png" alt="">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m6.png" alt="">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m7.png" alt="">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m8.png" alt="">
+                    <img style="height: 100px; width: 100px;" src=".\assets\m9.png" alt="">
+                </div>
+        </div>
+    </section>
+    <!-- as seeen as end -->
+         <br>
+         <br>
+<!-- footer start -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+
+            <h4 style="text-align: center; font-size: 44px; color: #05354e;">Godrej Interio </h4>
+            <br>
+            <div class="footer-page">
+                <ul>
+                    <a href="About">
+                    <li>About us</li>
+                    <li>Blogs<li>
+                    <li>Carrers</li>
+                    <li>Media</li>
+                    <li>Green initiative</li>
+
+                </a>
+
+                    <ul>
+                    <a href="Policy">
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy<li>
+                    <li>Furniture</li>
+                </ul>
+            </a>
+
+                    <ul>
+                    <a href="Help">
+                    <li>Payment</li>
+                    <li>Shipping<li>
+                    <li>FAQs</li>
+                </ul>
+            </a>    
+
+                <ul>
+                    <a href="Contact">
+                    <li>Contact Us</li>
+                    <li>Locate Stores<li>
+                    <li>Service & Support</li>
+                    <li>Request A Callaback</li>
+                </ul>
+              </a>
+
+            </div>
+
+            <h4 style="font-size: 29px; color: #05354e;">Payment Mode</h4><br>
+            <div class="payment-methods" style="height: 25px;">
+
+                <a href="https://www.visa.com" target="_blank">
+                    <img style="height: 40px; width: 50px;" src="./assets/visa.png" alt="Visa">
+                </a>
+                <a href="https://www.mastercard.com" target="_blank">
+                    <img style="height: 40px; width: 50px;" src="./assets/Mastercard.png" alt="Mastercard">
+                </a>
+                <a href="https://www.paypal.com" target="_blank">
+                    <img style="height: 40px; width: 50px;" src="./assets/paypal.png" alt="PayPal">
+                </a>
+                <a href="https://www.americanexpress.com" target="_blank">
+                    <img style="height: 40px; width: 50px;" src="./assets/american.png"
+                        alt="American Express">
+
+                </a> <a href="https://pay.google.com" target="_blank">
+                    <img style="height: 40px; width: 50px;" src="./assets/googlepay.png" alt="Google Pay">
+                </a>
+                <a href="https://paytm.com" target="_blank">
+                    <img style="height: 40px; width: 50px;" src="./assets/paytm.png" alt="Paytm">
+                </a>
+
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4 style="font-size: 33px; color: #05354e;">Follow Us</h4><br>
+            <div class="social-icons" style="height: 28px;">
+                <a href="https://www.facebook.com/GodrejInterio" class="fab fa-facebook-f facebook"
+                    target="_blank" rel="noopener noreferrer "></a>
+                <a href="https://twitter.com/GodrejInterio" class="fab fa-twitter twitter" target="_blank"
+                    rel="noopener noreferrer"></a>
+                <a href="https://www.instagram.com/godrejinterio" class="fab fa-instagram instagram"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://www.linkedin.com/company/godrejinterio" class="fab fa-linkedin linkedin"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://www.pinterest.com/godrejinterio" class="fab fa-pinterest pinterest"
+                    target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <br><br><br>
+
+            <div class="  footer-section">
+                <h4 style="font-size: 33px;  color: #05354e;">Contact Us</h4><br>
+                <p style="font-size: 20px; margin-bottom: 55%;">Email: info@furniturewebsite.com <br>
+                    Phone: (123) 456-7890</p>
+
+            </div>
+        </div>
+
+        <div class="footer-section">
+
+            <h1
+                style="font-size: 35px ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #06030a;">
+                Stay tuned to all our <br> latest news and blogs</h1>
+            <div>
+                <br><br><br>
+                <h4 style="font-size: 30px; color: #05354e;">Visit Us In</h4>
+                <div>
+                    <p
+                        style="font-size: 17px ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Ahmedabad | Akola | Bhopal | Bhubaneswar | Cuttack |
+                        Dhanbad | Faridabad | Gurgaon | Guwahati | Kolkata |
+                        Lucknow | Mumbai |Nashik | Navi Mumbai | Raigarh |
+                        Raipur | Ranchi | Thane | Trivandrum
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-b">
+<h5 style="font-size: 19 px;"> Created By @ BitByBit04 <br>
+    © Godrej Interio Copyright
+    2024</h5>
+</div>
+</footer>
+
+            <!-- back to top btn -->
+            <a href="#home">
+                <div id="backtotopbtn"><svg id="backtotopsvg" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.72949 10.0052L12.9523 16.228L19.1751 10.0052" stroke="#232323"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </svg>
+                </div>
+            </a>
+    </section>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- gsap scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
